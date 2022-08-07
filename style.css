@@ -1,0 +1,108 @@
+:root {
+  --primary-color: #6c63ff;
+  --textbox-color: #f4f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  margin-bottom: 100px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 96px;
+}
+
+h2 {
+  margin: 0;
+  font-size: 48px;
+}
+
+h3 {
+  margin: 0;
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p {
+  font-size: 18px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.nav-links a {
+  margin: 20px;
+  padding: 20px 15px;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.contact-link:hover {
+  color: white;
+}
+
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.contact-link {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  box-shadow: var(--box-shadow);
+}
+
+.launch-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  background: var(--primary-color);
+  color: white;
+}
+
+.mail-link {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 28px;
+}
+
+.mail-link:hover {
+  text-decoration: underline;
+}
+
+.about-paragraph {
+  margin: 30px 10px;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .projects-info {
+    text-align: center;
+  }
+
+  .launch-link {
+    display: block;
+    margin: 0 14px;
+  }
+
+  .projects-images > * {
+    margin: 10px 0;
+    padding: 0 15px;
+  }
+
+  .mail-link {
+    font-size: 22px;
+  }
+}
